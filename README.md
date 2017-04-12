@@ -1,6 +1,10 @@
 Electron application of [Sugarizer](http://sugarizer.org).
 Distributed with Flatpak.
 
+![](screenshots/screen-01.png)
+![](screenshots/screen-02.png)
+![](screenshots/screen-03.png)
+
 Installation
 ------------
 

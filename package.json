@@ -5,8 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . sugarizer --platform linux --arch x64 --out dist/",
-    "flatpak64": "electron-installer-flatpak --src dist/sugarizer-linux-x64/ --dest dist/installers/ --arch x64"
+    "pack": "electron-packager . sugarizer --platform linux --arch x64 --icon resources/icon.png --out dist/",
+    "flatpak64": "electron-installer-flatpak --src dist/sugarizer-linux-x64/ --arch x64 --config config.json",
+    "build": "npm run pack && npm run flatpak64"
   },
   "repository": "https://github.com/manuq/sugarizer-electron",
   "keywords": [
@@ -18,9 +19,8 @@
   "author": "Manuel Quiñones",
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "~1.6.2",
     "electron-installer-flatpak": "*",
     "electron-packager": "*",
-    "electron-prebuilt": "*"
+    "electron": "~1.6.2"
   }
 }

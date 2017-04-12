@@ -12,15 +12,11 @@ Build a Flatpak application
 ---------------------------
 
 The easiest way to distribute applications in Linux is with Flatpak.
-First you need the following dependencies:
+The following command will install the required dependencies and then
+create the Flatpak package:
 
-    $ npm install --save-dev electron-packager
-    $ npm install --save-dev electron-installer-flatpak
-
-The following commands will create the Flatpak package:
-
+    $ npm install
     $ npm run build
-    $ npm run flatpak64
 
 The Flatpak bundle will appear inside dist/installers/ . This can be
 distributed to any Linux64 system.  To install the bundle and run the

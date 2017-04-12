@@ -1,0 +1,3 @@
+[submodule "sugarizer"]
+	path = sugarizer
+	url = https://github.com/llaske/sugarizer.git
